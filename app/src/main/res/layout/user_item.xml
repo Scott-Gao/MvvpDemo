@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="user"
+            type="myUser" />
+        <import type="com.example.wangxin.mvvpdemo.User" alias="myUser"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`姓：`+user.firstName}" />
+
+        <TextView
+            android:id="@+id/tv_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`名字：`+user.lastName}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`年龄：`+user.age}" />
+    </LinearLayout>
+</layout>

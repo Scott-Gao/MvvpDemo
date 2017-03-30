@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MvvpDemo</string>
+    <string name="log_in">登录</string>
+    <string name="create_user">注册</string>
+</resources>
